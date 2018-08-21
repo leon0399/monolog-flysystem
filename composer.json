@@ -1,11 +1,12 @@
 {
   "name": "leon0399/monolog-flysystem",
-  "description": "Writes your Monolog records into Flysystem filesystems",
+  "description": "Writes your Monolog records into Flysystem files.",
   "keywords": [
     "log",
     "logging",
     "monolog",
-    "filesystem",
+    "monolog-handler",
+    "monolog-library",
     "flysystem",
     "cloud logging"
   ],
