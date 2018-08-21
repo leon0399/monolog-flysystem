@@ -1,9 +1,9 @@
 # Monolog Flysystem 
 
-
-[![Total Downloads](https://img.shields.io/packagist/dt/leon0399/monolog-flysystem.svg)](https://packagist.org/packages/leon0399/monolog-flysystem)
-[![Latest Stable Version](https://img.shields.io/packagist/v/leon0399/monolog-flysystem.svg)](https://packagist.org/packages/leon0399/monolog-flysystem)
-[![Latest Stable Version](https://img.shields.io/packagist/vpre/leon0399/monolog-flysystem.svg)](https://packagist.org/packages/leon0399/monolog-flysystem)
+[![Total Downloads](https://poser.pugx.org/leon0399/monolog-flysystem/downloads)](https://packagist.org/packages/leon0399/monolog-flysystem)
+[![Latest Stable Version](https://poser.pugx.org/leon0399/monolog-flysystem/v/stable)](https://packagist.org/packages/leon0399/monolog-flysystem)
+[![Latest Unstable Version](https://poser.pugx.org/leon0399/monolog-flysystem/v/unstable)](https://packagist.org/packages/leon0399/monolog-flysystem)
+[![License](https://poser.pugx.org/leon0399/monolog-flysystem/license)](https://packagist.org/packages/leon0399/monolog-flysystem)
 
 Writes your Monolog records into Flysystem files.
 
@@ -22,7 +22,7 @@ $ composer require leon0399/monolog-flysystem
 
 use Monolog\Logger;
 use League\Flysystem\Filesystem;
-use \League\Flysystem\Adapter\Local as LocalAdapter;
+use League\Flysystem\Adapter\Local as LocalAdapter;
 
 use Leon0399\MonologFlysystem\Handler\FlysystemStreamHandler;
 

@@ -48,11 +48,25 @@ class FlysystemStreamHandler extends AbstractProcessingHandler
     }
 
     /**
+     * @return string
+     */
+    public function getSeparator(): string
+    {
+        return $this->separator;
+    }
+
+    /**
      * {@inheritdoc}
      */
     protected function write(array $record)
     {
-        $this->append($this->path, $record['formatted']);
+        if (is_array($record['formatted'])) {
+            $record['formatted'] = json_encode($record['formatted']);
+        }
+
+        $formated = $record['formatted'];
+
+        $this->append($this->path, $formated);
     }
 
     /**
@@ -65,8 +79,12 @@ class FlysystemStreamHandler extends AbstractProcessingHandler
      */
     private function append($path, $data, $separator = self::DEFAULT_SEPARATOR)
     {
+        if (is_array($data)) {
+            $data = implode('', $data);
+        }
+
         if ($this->filesystem->has($path)) {
-            return $this->filesystem->put($path, $this->filesystem->get($path) . $separator . $data);
+            return $this->filesystem->put($path, $this->filesystem->read($path) . $separator . $data);
         }
 
         return $this->filesystem->put($path, $data);

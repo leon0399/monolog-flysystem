@@ -25,11 +25,19 @@
     "league/flysystem": "^1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.5"
+    "phpunit/phpunit": "^7"
   },
   "autoload": {
     "psr-4": {
       "Leon0399\\MonologFlysystem\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Leon0399\\MonologFlysystem\\": "tests/"
+    }
+  },
+  "scripts": {
+    "phpunit": "./vendor/bin/phpunit"
   }
 }
