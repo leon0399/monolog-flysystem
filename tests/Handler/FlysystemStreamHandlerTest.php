@@ -45,7 +45,7 @@ class FlysystemStreamHandlerTest extends TestCase
     {
         $this->handler->handle($this->getRecord(Logger::WARNING, 'test'));
 
-        $this->assertEquals('test', $this->readFile());
+        self::assertEquals('test', $this->readFile());
     }
 
     public function testMultipleWrite()
@@ -63,6 +63,14 @@ class FlysystemStreamHandlerTest extends TestCase
         ];
 
         self::assertEquals(implode($this->handler->getSeparator(), $expected), $this->readFile());
+    }
+
+    public function testSetSeparator()
+    {
+        $separator = '' . mt_rand();
+        $this->handler->setSeparator($separator);
+
+        self::assertEquals($separator, $this->handler->getSeparator());
     }
 
     private function readFile()
