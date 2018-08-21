@@ -1,0 +1,16 @@
+{
+    "name": "leon0399/monolog-flysystem",
+    "description": "Handler for writing Monolog records into Flysystem",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "^1.23",
+        "league/flysystem": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonid Meleshin",
+            "email": "leon.03.99@gmail.com"
+        }
+    ]
+}
