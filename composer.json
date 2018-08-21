@@ -1,16 +1,34 @@
 {
-    "name": "leon0399/monolog-flysystem",
-    "description": "Handler for writing Monolog records into Flysystem",
-    "type": "library",
-    "require": {
-        "monolog/monolog": "^1.23",
-        "league/flysystem": "^1.0"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Leonid Meleshin",
-            "email": "leon.03.99@gmail.com"
-        }
-    ]
+  "name": "leon0399/monolog-flysystem",
+  "description": "Writes your Monolog records into Flysystem filesystems",
+  "keywords": [
+    "log",
+    "logging",
+    "monolog",
+    "filesystem",
+    "flysystem",
+    "cloud logging"
+  ],
+  "homepage": "http://github.com/leon0399/monolog-flysytem",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonid Meleshin",
+      "email": "leon.03.99@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "monolog/monolog": "^1.23",
+    "league/flysystem": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leon0399\\MonologFlysystem\\": "src/"
+    }
+  }
 }
