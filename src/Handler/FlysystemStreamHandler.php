@@ -58,7 +58,7 @@ class FlysystemStreamHandler extends AbstractProcessingHandler
     /**
      * {@inheritdoc}
      */
-    protected function write(array $record)
+    protected function write(array $record): void
     {
         if (is_array($record['formatted'])) {
             $record['formatted'] = json_encode($record['formatted']);
