@@ -1,4 +1,4 @@
-# Monolog Flysystem [![Build Status](https://travis-ci.com/leon0399/monolog-flysystem.svg?branch=master)](https://travis-ci.com/leon0399/monolog-flysystem) [![codecov](https://codecov.io/gh/leon0399/monolog-flysystem/branch/master/graph/badge.svg)](https://codecov.io/gh/leon0399/monolog-flysystem)
+# Monolog Flysystem [![Tests / PHPUnit](https://github.com/leon0399/monolog-flysystem/actions/workflows/phpunit.yml/badge.svg)](https://github.com/leon0399/monolog-flysystem/actions/workflows/phpunit.yml) [![codecov](https://codecov.io/gh/leon0399/monolog-flysystem/branch/master/graph/badge.svg)](https://codecov.io/gh/leon0399/monolog-flysystem)
 
 [![Total Downloads](https://poser.pugx.org/leon0399/monolog-flysystem/downloads)](https://packagist.org/packages/leon0399/monolog-flysystem)
 [![Latest Stable Version](https://poser.pugx.org/leon0399/monolog-flysystem/v/stable)](https://packagist.org/packages/leon0399/monolog-flysystem)
