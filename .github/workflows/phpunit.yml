@@ -20,6 +20,12 @@ jobs:
         os: [ubuntu-latest]
         coverage: [none]
 
+        include:
+          - php: 7.4
+            stability: prefer-stable
+            os: ubuntu-latest
+            coverage: xdebug
+
     name: '[PHP ${{ matrix.php }}] [${{ matrix.stability }} stability] [${{ matrix.coverage }} coverage]'
 
     steps:
@@ -62,7 +68,7 @@ jobs:
 
       - name: Upload coverage
         uses: codecov/codecov-action@v1
-        if: matrix.coverage == 'xdebug'
+        if: matrix.coverage != 'none'
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage.xml
