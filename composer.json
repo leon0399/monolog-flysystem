@@ -20,7 +20,7 @@
   ],
   "homepage": "http://github.com/leon0399/monolog-flysytem",
   "require": {
-    "php": "^7.4 || ^8.0",
+    "php": ">=7.3",
     "league/flysystem": "^1.0",
     "monolog/monolog": "^2.4"
   },
