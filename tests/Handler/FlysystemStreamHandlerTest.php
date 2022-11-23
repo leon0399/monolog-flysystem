@@ -29,7 +29,7 @@ class FlysystemStreamHandlerTest extends TestCase
      */
     protected $handler;
 
-    public function setup()
+    public function setup(): void
     {
         $this->filename = 'logs/' . mt_rand() . '.log';
 
